@@ -11,3 +11,5 @@ trashClick[i].addEventListener("click",
         }
     )
 }
+
+var clickadd = document.get

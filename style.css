@@ -55,3 +55,28 @@ p {
 .blue{
   color: rgb(106, 137, 186);
 }
+
+.newtxt{
+  justify-content: space-around;
+}
+input{
+  width: 100vh;
+  height: 3vh;
+  padding: 5px;
+}
+button{
+  color: #23abba;
+  background-color: white;
+  padding: 1vh 2vh;
+  border: 1px solid #23abba;
+  border-radius: 20%;
+  font-size: 1rem;
+}
+button:hover{
+  background-color: #23abba ;
+  color: white;
+  cursor: pointer;
+}
+button:focus{
+  outline: 0;
+}
