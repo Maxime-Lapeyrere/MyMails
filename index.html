@@ -9,15 +9,15 @@
     <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-    <ul>
+    <ul id="list">
         <li class="count tmplt">
             <h6>Messages <span class="blue">Total: <span id="compteur">0</span></span></h6>
         </li>
         <li class="newtxt tmplt">
-            <input type="text" name="message" value="Nouveau Message">
-            <button type="button">Add</button>
+            <input id="newmsg" type="text" onfocus="this.value='' " name="message" value="Nouveau Message">
+            <button id="btn" type="button"  >Add</button>
         </li>
-        <li class="mail tmplt" class="num">
+        <li class="mail tmplt">
             <img class="avatar" src="./img/Fichier 1.png" alt="photo de profil Noel">
             <div class="message">
                 <h6>Noel Paganelli</h6>
@@ -69,3 +69,6 @@
     <script src="./scripts.js"></script>
 </body>
 </html>
+
+
+<!-- onclick="document.getElementById('newmsg').value = ''" -->

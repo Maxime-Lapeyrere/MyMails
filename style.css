@@ -59,6 +59,10 @@ p {
 .newtxt{
   justify-content: space-around;
 }
+
+.message{
+  width: 850px;
+}
 input{
   width: 100vh;
   height: 3vh;
