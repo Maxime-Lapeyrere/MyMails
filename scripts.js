@@ -15,6 +15,7 @@ trashClick[i].addEventListener("click",
 var clickadd = document.getElementById('btn');
 
 
+
 clickadd.addEventListener("click", 
     function(){
         var newtxt = document.getElementById('newmsg').value
@@ -22,6 +23,7 @@ clickadd.addEventListener("click",
         var ul = document.getElementById("list")
         var newli = document.createElement("li");
         var first = document.getElementsByClassName('mail')
+        
         
         newli.setAttribute("class","mail tmplt")
         
@@ -51,13 +53,32 @@ clickadd.addEventListener("click",
 
         var trash = document.createElement('img')
             trash.src = "./img/recycle-bin-1-461646.png";
-            trash.className = "bin"   
+            trash.setAttribute("class","bin")  
         newli.appendChild(trash)
 
+        
+
+        for(var i=0; i<trashClick.length; i++){
+            trashClick[i].addEventListener("click", 
+                function(){
+                        this.parentNode.remove();
+                        document.getElementById('compteur').textContent = document.getElementsByClassName('mail').length;
+                    }
+                )
+            }
+        
         document.getElementById('list').insertBefore(newli, first[0])
     
         document.getElementById('compteur').textContent = document.getElementsByClassName('mail').length;
-        document.getElementById('newmsg').value = ''
+        document.getElementById('newmsg').value = 'Nouveau Message'
+        
     }
 )
 
+
+
+// var sent = document.getElementById("newmsg").value;
+// var sent1 = document.getElementById("newmsg").textContent;
+// sent.textContent=('Nouveau Message')
+// console.log('info',sent1)
+// console.log('info2',sent)

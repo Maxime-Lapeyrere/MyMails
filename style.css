@@ -19,6 +19,7 @@ p {
 }
 
 .tmplt{
+  width: 130vh;
   display: flex;
   align-items: center;
   background-color:rgb(255, 255, 255);
@@ -49,7 +50,9 @@ p {
 }
 
 .message {
-  padding: 0px 100px 0px 60px;
+  margin: 50px;
+  /* padding: 0px 100px 0px 60px; */
+  width: 40px;
 }
 
 .blue{
