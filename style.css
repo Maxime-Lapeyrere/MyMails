@@ -1,0 +1,57 @@
+body{
+  background-color: rgb(245, 246, 249);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: medium;
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+p {
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
+.tmplt{
+  display: flex;
+  align-items: center;
+  background-color:rgb(255, 255, 255);
+  padding: 30px;
+  border-top: 2px solid rgb(237, 237, 237);
+  border-left: 2px solid rgb(237, 237, 237);
+  border-right: 2px solid rgb(237, 237, 237);
+}
+
+.mailbottom {
+  border-bottom: 2px solid rgb(237, 237, 237);
+}
+
+.avatar {
+  height: 140px;
+}
+
+.bin {
+  width: 20px;
+}
+
+.bin:hover{
+  width: 25px;
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.message {
+  padding: 0px 100px 0px 60px;
+}
+
+.blue{
+  color: rgb(106, 137, 186);
+}
