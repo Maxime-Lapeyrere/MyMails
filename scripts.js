@@ -57,6 +57,7 @@ clickadd.addEventListener("click",
         document.getElementById('list').insertBefore(newli, first[0])
     
         document.getElementById('compteur').textContent = document.getElementsByClassName('mail').length;
+        document.getElementById('newmsg').value = ''
     }
 )
 
