@@ -41,17 +41,45 @@ clickadd.click(
             $("#newmsg").value=''
         
     })
-
+    
+    $('#btn1').click(function(){
+        $('h6').each(
+            function(){
+                if($('#btn1').text()=='All' && $('#search').val() == $(this).text()){
+                    console.log($('#search').val());
+                    $('h6').parent().parent().fadeIn()
+                    $('#search').val('Rechercher')
+                    $('#btn1').text('Search')
+                    }
+                }
+            )
+        }
+    )
     $('#btn1').click(function(){
         $('h6').each(
             function(){
                 if($('#search').val()!= $(this).text()){
                     $(this).parent().parent().fadeOut()
+                    
                 }
             }
         )
+        $('#compteur').text($('.mail').length); 
+        $('#btn1').text('All')
+        
     }     
-)
+    )
     
 
 
+// $('#btn1').click(function(){
+//     $('h6').each(
+//         function(){
+//             if($('#btn1').text()=='All' && etat == false ){
+//                 $(this).parent().parent().fadeIn()
+//             }
+//         }
+//         )
+//         // $('#btn1').text('Search')
+//     }
+//     )
