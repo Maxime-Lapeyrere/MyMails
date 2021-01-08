@@ -87,3 +87,7 @@ button:hover{
 button:focus{
   outline: 0;
 }
+
+#divider{
+  padding: 50px;
+}
